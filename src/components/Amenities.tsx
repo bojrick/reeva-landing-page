@@ -12,22 +12,29 @@ export default function Amenities() {
   ];
 
   return (
-    <section className="my-12 bg-gray-100 p-8 rounded-lg shadow-md">
-      <h2 className="text-3xl font-semibold mb-6 text-secondary">World-Class Amenities</h2>
-      <div className="flex flex-col md:flex-row">
-        <div className="md:w-1/2">
-          <ul className="space-y-2">
+    <section className="my-12 bg-gray-100 p-6 sm:p-8 rounded-lg shadow-md">
+      <h2 className="text-2xl sm:text-3xl font-semibold mb-6 text-secondary">World-Class Amenities</h2>
+      <div className="flex flex-col lg:flex-row gap-8">
+        <div className="lg:w-1/2">
+          <ul className="space-y-4">
             {amenities.map((amenity, index) => (
-              <li key={index} className="flex items-center">
-                <span className="text-accent mr-2">✓</span> {amenity}
+              <li key={index} className="flex items-center p-2 bg-white rounded-lg shadow-sm hover:shadow transition-shadow duration-300">
+                <span className="text-accent mr-3 text-xl">✓</span> 
+                <span className="text-secondary">{amenity}</span>
               </li>
             ))}
           </ul>
-          <Button className="mt-6 bg-primary hover:bg-primary/90">View All Amenities</Button>
+          <Button className="mt-6 bg-primary hover:bg-primary/90 w-full sm:w-auto">View All Amenities</Button>
         </div>
-        <div className="md:w-1/2 mt-6 md:mt-0 md:pl-8">
-          <div className="relative h-64">
-            <Image src="/api/placeholder/400/300" alt="Luxury Amenities" layout="fill" objectFit="cover" className="rounded-lg" />
+        <div className="lg:w-1/2">
+          <div className="relative h-64 sm:h-80 rounded-lg overflow-hidden">
+            <Image 
+              src="/api/placeholder/800/600" 
+              alt="Luxury Amenities" 
+              layout="fill" 
+              objectFit="cover" 
+              className="transition-transform duration-300 hover:scale-110"
+            />
           </div>
         </div>
       </div>
