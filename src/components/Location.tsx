@@ -11,8 +11,8 @@ export default function Location() {
         <div className="md:w-1/2 mt-4 md:mt-0 md:ml-4">
           <h3 className="text-xl font-semibold">Gift City</h3>
           <p className="mt-2">
-            "Luxury is a location like no other". Skyview lets you take
-            advantage of Gift City's prime location and world-class infrastructure.
+            &ldquo;Luxury is a location like no other&rdquo;. Skyview lets you take
+            advantage of Gift City&apos;s prime location and world-class infrastructure.
           </p>
         </div>
       </div>
