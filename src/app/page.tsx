@@ -1,9 +1,10 @@
 import Hero from '@/components/Hero';
 import PropertyDetails from '@/components/PropertyDetails';
-// import Gallery from '@/components/Gallery';
-// import Amenities from '@/components/Amenities';
-// import Location from '@/components/Location';
-// import RegistrationForm from '@/components/RegistrationForm';
+import Gallery from '@/components/Gallery';
+import Amenities from '@/components/Amenities';
+import Location from '@/components/Location';
+import RegistrationForm from '@/components/RegistrationForm';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -11,10 +12,11 @@ export default function Home() {
       <Hero />
       <main className="container mx-auto px-4 py-8">
         <PropertyDetails />
-        {/* <Gallery />
+        <Gallery />
         <Amenities />
         <Location />
-        <RegistrationForm /> */}
+        <RegistrationForm />
+        <Footer />
       </main>
     </div>
   );
